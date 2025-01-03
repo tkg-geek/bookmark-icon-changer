@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Bookmark Folder Icon Changer",
+    "version": "1.0",
+    "description": "Upload an image and use it as an icon for your bookmark folders.",
+    "permissions": [
+      "bookmarks",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }
+]
+
+  }
+  
