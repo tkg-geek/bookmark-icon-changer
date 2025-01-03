@@ -7,23 +7,33 @@
     body {
       font-family: Arial, sans-serif;
       padding: 10px;
+      min-width: 300px;
     }
-    input[type="file"], input[type="text"], button {
+    select, input[type="file"], input[type="text"], button {
       display: block;
       margin: 10px 0;
+      width: 100%;
     }
     img {
       max-width: 100px;
       max-height: 100px;
       display: block;
+      margin: 10px 0;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
   <h1>Change Bookmark Folder Icon</h1>
-  <input type="text" id="folder-id" placeholder="Enter Folder ID">
-  <input type="file" id="icon-upload" accept="image/*">
-  <img id="preview" src="#" alt="Preview" style="display:none;">
+  <select id="folder-select">
+    <option value="">Select a folder...</option>
+  </select>
+  <input type="text" id="folder-id" placeholder="Folder ID" readonly>
+  <input type="file" id="icon-file" accept="image/*">
+  <img id="preview" src="#" alt="Preview">
   <button id="apply-icon">Apply Icon</button>
 
   <script src="popup.js"></script>

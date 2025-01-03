@@ -1,0 +1,8 @@
+.icon-folder-open.custom-folder-icon {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: transparent !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+}
